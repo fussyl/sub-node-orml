@@ -1,0 +1,13 @@
+{
+    "CurrencyId": {
+        "_enum": [
+            "Native",
+            "FUSSY"
+        ]
+    },
+    "CurrencyIdOf": "CurrencyId",
+    "Amount": "i128",
+    "AmountOf": "Amount",
+    "Address": "AccountId",
+    "LookupSource": "AccountId"
+}
