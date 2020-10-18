@@ -279,6 +279,7 @@ impl pallet_sudo::Trait for Runtime {
 	type Call = Call;
 }
 
+// orml_tokens
 impl orml_tokens::Trait for Runtime {
 	type Event = Event;
 	type Balance = Balance;
@@ -298,6 +299,14 @@ impl orml_currencies::Trait for Runtime {
 	type NativeCurrency = BasicCurrencyAdapter<Runtime, Balances, Amount, BlockNumber>;
 	type GetNativeCurrencyId = GetNativeCurrencyId;
 	type WeightInfo = ();
+}
+
+// orml-nft
+impl orml_nft::Trait for Runtime {
+	type ClassId = u64;
+	type TokenId = u64;
+	type ClassData = ();
+	type TokenData = ();
 }
 
 /*
@@ -347,6 +356,7 @@ construct_runtime!(
 		
 		Currencies: orml_currencies::{Module, Call, Event<T>},
 		Tokens: orml_tokens::{Module, Storage, Event<T>, Config<T>},
+		OrmlNFT: orml_nft::{Module, Storage},
 	}
 );
 

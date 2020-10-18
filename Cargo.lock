@@ -3297,6 +3297,7 @@ dependencies = [
  "frame-system-rpc-runtime-api",
  "hex-literal",
  "orml-currencies",
+ "orml-nft",
  "orml-tokens",
  "pallet-aura",
  "pallet-balances",
@@ -3474,6 +3475,18 @@ dependencies = [
  "parity-scale-codec",
  "serde",
  "sp-io",
+ "sp-runtime",
+ "sp-std",
+]
+
+[[package]]
+name = "orml-nft"
+version = "0.3.2-dev"
+source = "git+https://github.com/open-web3-stack/open-runtime-module-library.git#f278c766d8bcc36b94c0e0c63d1205a4e5351841"
+dependencies = [
+ "frame-support",
+ "frame-system",
+ "parity-scale-codec",
  "sp-runtime",
  "sp-std",
 ]
@@ -7326,7 +7339,7 @@ version = "1.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3bfd5b7557925ce778ff9b9ef90e3ade34c524b5ff10e239c69a42d546d2af56"
 dependencies = [
- "rand 0.3.23",
+ "rand 0.5.6",
 ]
 
 [[package]]

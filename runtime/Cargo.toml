@@ -57,6 +57,7 @@ sp-version = { default-features = false, version = '2.0.0' }
 pallet-scheduler = { default-features = false, version = '2.0.0' }
 orml-tokens = { git = "https://github.com/open-web3-stack/open-runtime-module-library.git", default-features = false }
 orml-currencies = { git = "https://github.com/open-web3-stack/open-runtime-module-library.git", default-features = false}
+orml-nft = { git = "https://github.com/open-web3-stack/open-runtime-module-library.git", default-features = false}
 
 [features]
 default = ['std']
@@ -101,4 +102,6 @@ std = [
     'pallet-scheduler/std',
     'orml-tokens/std',
     'orml-currencies/std',
+    "orml-nft/std",
+
 ]

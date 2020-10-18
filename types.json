@@ -9,5 +9,7 @@
     "Amount": "i128",
     "AmountOf": "Amount",
     "Address": "AccountId",
-    "LookupSource": "AccountId"
+    "LookupSource": "AccountId",
+    "TokenId": "u64",
+    "ClassId": "u64"
 }
